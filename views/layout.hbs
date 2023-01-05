@@ -10,13 +10,20 @@
   </head>
 
   <body>
-     <nav>
-         <ul>
-            <li> <a href="/">Home</a></li>
-            <li> <a href="/signup">Signup</a></li>
-            <li> <a href="/login">Login</a></li>
-         </ul>
-      </nav>
+
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/main">Main</a></li>
+      <li><a href="/private">Private</a></li>
+      <li><a href="/auth/signup">Signup</a></li>
+      <li><a href="/auth/login">Login</a></li>
+      <li>
+        <form action="/auth/logout" method="post">
+          <button type="submit">Logout</button>
+        </form>
+      </li>
+    </ul>
+
     {{{body}}}
 
     <script src="/js/script.js"></script>
